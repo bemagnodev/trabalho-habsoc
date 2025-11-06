@@ -197,7 +197,7 @@ st.markdown('<a class="anchor" id="entrevistas"></a>', unsafe_allow_html=True)
 st.header("🎙️ Entrevistas com Veteranos")
 st.write("Reunimos alguns veteranos para compartilhar suas experiências, dar dicas valiosas e contar o que gostariam de saber quando eram calouros. Dê o play!")
 
-video_path = "assets/video.mp4" 
+video_path = "assets/final.mp4" 
 
 try:
     # Abrimos o arquivo de vídeo em modo de leitura binária ('rb')
