@@ -195,22 +195,19 @@ st.divider()
 # --- 3. Seção Entrevistas ---
 st.markdown('<a class="anchor" id="entrevistas"></a>', unsafe_allow_html=True)
 st.header("🎙️ Entrevistas com Veteranos")
-st.write("Reunimos alguns veteranos para compartilhar suas experiências, dar dicas valiosas e contar o que gostariam de saber quando eram calouros. Dê o play!")
+st.write(
+    "Reunimos alguns veteranos para compartilhar suas experiências, dar dicas valiosas "
+    "e contar o que gostariam de saber quando eram calouros. Dê o play!"
+)
 
-video_path = "assets/final.mp4" 
+# Basta colocar o link do YouTube aqui:
+youtube_url = "https://youtu.be/i3MjCCs5bvc"  # substitua pelo seu link real
 
-try:
-    # Abrimos o arquivo de vídeo em modo de leitura binária ('rb')
-    video_file = open(video_path, 'rb')
-    video_bytes = video_file.read()
-    
-    # st.video exibe o player
-    st.video(video_bytes)
-
-except FileNotFoundError:
-    st.error(f"Erro: Vídeo '{video_path}' não encontrado. Verifique o caminho e o nome do arquivo.")
+# st.video aceita links do YouTube diretamente
+st.video(youtube_url)
 
 st.divider()
+
 
 
 # --- 4. Seção Fórum P&R ---
